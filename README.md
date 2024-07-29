@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import resolveSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-resolve-setter@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/array-base-resolve-setter/tags). For example,
+
+```javascript
 import resolveSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-resolve-setter@v0.2.2-esm/index.mjs';
 ```
 
@@ -112,7 +117,7 @@ The returned accessor function accepts the following arguments:
 <script type="module">
 
 import filled from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-filled@esm/index.mjs';
-import resolveSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-resolve-setter@v0.2.2-esm/index.mjs';
+import resolveSetter from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-resolve-setter@esm/index.mjs';
 
 var arr = filled( 1.0, 10, 'float64' );
 resolveSetter( arr )( arr, 2, 100.0 );
